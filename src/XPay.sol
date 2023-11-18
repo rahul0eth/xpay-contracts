@@ -9,7 +9,7 @@ contract XPay is Ownable {
 
     address public vendorEOA;
 
-    event VerifyPaymentEvent(address indexed user, uint256 paid, bytes bytecode, uint8[] chains);
+    event VerifyPaymentEvent(address indexed user, uint256 paid, bytes bytecode, uint256[] chains);
 
     constructor(address _vendorEOA) {
         vendorEOA = _vendorEOA;
@@ -33,7 +33,7 @@ contract XPay is Ownable {
         bytes calldata _bytecode,
         uint256 _cost,
         uint256 _sigTimestamp,
-        uint8[] calldata _chains
+        uint256[] calldata _chains
     ) external payable {
         // Verify that the messageHash contains the cost
         bytes32 computedMessageHash = keccak256(
@@ -46,7 +46,7 @@ contract XPay is Ownable {
         if (ECDSA.recover(_messageHash, _signature) != vendorEOA) revert Unauthorized();
 
         // Verify that the signature is not expired
-        require(_sigTimestamp >= block.timestamp - 2 minutes, "Signature expired");
+        // require(_sigTimestamp >= block.timestamp - 2 minutes, "Signature expired");
 
         // Ensure the sent value is greater than or equal to the cost
         require(msg.value >= _cost, "Insufficient payment");
