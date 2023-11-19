@@ -1,7 +1,17 @@
+# Use our project!
+[Link](https://xpay-ui.vercel.app/)
+
 # Related Repos: 
 [xpay-api repo](https://github.com/cucupac/xpay-api)
 
 [xpay-ui repo](https://github.com/rahul0eth/xpay-ui)
+
+# Interact with many chains in one click through xPay:
+Deployed 14 multi-chain contracts on 4 chains - 
+[Gnosis Chain Contracts](https://gnosisscan.io/address/0x7a5717F0B8cAFD96821f419150C4966612FFbbAC#internaltx), 
+[Arbitrum Contracts](https://testnet.arbiscan.io/address/0x7a5717F0B8cAFD96821f419150C4966612FFbbAC#internaltx), 
+[Celo Contracts](https://explorer.celo.org/mainnet/address/0x7a5717F0B8cAFD96821f419150C4966612FFbbAC/internal-transactions#address-tabs), and
+[Base Contracts](https://goerli.basescan.org/address/0x7a5717F0B8cAFD96821f419150C4966612FFbbAC#internaltx), each in one click!
 
 ## Foundry
 
