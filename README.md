@@ -1,3 +1,8 @@
+# Related Repos: 
+[xpay-api repo](https://github.com/cucupac/xpay-api)
+
+[xpay-ui repo](https://github.com/rahul0eth/xpay-ui)
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
